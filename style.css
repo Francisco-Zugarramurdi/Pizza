@@ -12,11 +12,20 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: var(--darkest-orange);
+}
+
+a:visited {
+  text-decoration: none;
+}
+
 :root {
   --orange: #f9be60;
   --dark-orange: #835100;
   --darkest-orange: #362100;
-  --grey-background:whitesmoke;
+  --grey-background: whitesmoke;
 }
 
 /* Header */
@@ -58,6 +67,14 @@ header .logo h1 {
 
 header .logo h1 span {
   font-family: 'Noto Sans Math', sans-serif;
+}
+
+header .logo h1:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  cursor: pointer;
 }
 
 header nav {

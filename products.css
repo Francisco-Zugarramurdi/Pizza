@@ -1,0 +1,180 @@
+:root {
+  --orange: #f9be60;
+  --dark-orange: #835100;
+  --darkest-orange: #362100;
+  --grey-background: whitesmoke;
+}
+
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+}
+
+main section h2 {
+  width: 80%;
+  padding: 2% 0;
+  text-align: center;
+  font-size: 3em;
+  color: var(--darkest-orange);
+  border-bottom: #f9be60 3px solid;
+}
+
+main section form {
+  margin: 1% 0;
+  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 80%;
+  font-weight: 500;
+  color: var(--darkest-orange);
+}
+
+main section form .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 2% 5%;
+}
+
+main section form .option input {
+  margin-left: 5%;
+  width: 10%;
+  position: absolute;
+  opacity: 0;
+}
+
+main section form .option label {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main section form .option input:focus ~ label {
+  color: #f9be60;
+}
+
+main section form .option hr {
+  width: 0%;
+  border: #f9be60 2px solid;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main section form .option input:focus ~ hr {
+  width: 100%;
+  border: #f9be60 2px solid;
+  opacity: 100%;
+}
+
+main section .display {
+  min-height: 60vh;
+  width: 80%;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: #f9be60 2px solid;
+}
+
+main section .display .product.hidden {
+  display: none;
+}
+
+main section .display .product {
+  margin: 1%;
+  padding: 1%;
+  width: 28%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 50px;
+  background-color: #efefef;
+  border: #362100 3px solid;
+  color: #362100;
+}
+
+main section .display .product img {
+  margin-top: 5%;
+  width: 80%;
+}
+
+main section .display .product h3 {
+  font-size: 2em;
+  margin: 3%;
+}
+
+main section .display .product p {
+  margin: 3%;
+}
+
+main section .display .product button {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin-top: 12%;
+  padding: 2%;
+  width: 60%;
+  font-size: 1.8em;
+  font-weight: 800;
+  border-radius: 20px;
+  border: rgba(0, 0, 0, 0);
+  color: white;
+  background-color: #f9be60;
+  color: #362100;
+}
+
+main section .display .product button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: none;
+  color: #f9be60;
+}
+
+main section .display .product button:active {
+  color: #362100;
+}
+/*# sourceMappingURL=products.css.map */

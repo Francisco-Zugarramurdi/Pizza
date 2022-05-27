@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+    <title>πzza</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html"><span>π</span>zza</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="products.html">Products</a></li>
+                <li>About Us</li>
+                <li>Login</li>
+                <li>
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Our selection of products</h2>
+            <form id="filter">
+                <div class="option">
+                    <input type="radio" name="flavor" id="Classics" value="classics">
+                    <label for="Classics">Classics</label>
+                    <hr>
+                </div>
+                <div class="option">
+                    <input type="radio" name="flavor" id="Combos" value="combos">
+                    <label for="Combos">Combos</label>
+                    <hr>
+                </div>
+                <div class="option">
+                    <input type="radio" name="flavor" id="Vegan" value="vegan">
+                    <label for="Vegan">Vegan</label>
+                    <hr>
+                </div>
+                <div class="option">
+                    <input type="radio" name="flavor" id="Drinks" value="drinks">
+                    <label for="Drinks">Drinks</label>
+                    <hr>
+                </div>
+            </form>
+            <div class="display">
+                <div class="product classics hidden">
+                    <img src="./Assets/Pizza-Banner.png">
+                    <h3>Classic pizza</h3>
+                    <p>Our ol' and reliable classic pizza, just mozzarella</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product drinks hidden">
+                    <img src="./Assets/big-coke.png">
+                    <h3>Coke</h3>
+                    <p>A fresh and fizzy drink</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product combos hidden">
+                    <img src="./Assets/Pizza-Combo.png">
+                    <h3>Pizza an' coke</h3>
+                    <p>Our ol' and reliable classic pizza but not just mozzarella also brings with her a coke</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product vegan hidden">
+                    <img src="./Assets/Pizza-Salad.png">
+                    <h3>Salad pizza</h3>
+                    <p>Our 100% cruelty free option even the cheese is vegan!</p>
+                    <button>Add to cart</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="products.js"></script>
+</body>
+
+</html>
