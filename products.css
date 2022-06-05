@@ -177,4 +177,46 @@ main section .display .product button:hover {
 main section .display .product button:active {
   color: #362100;
 }
+
+/*Responsive*/
+@media (max-width: 768px) {
+  main section form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section form .option {
+    width: 50%;
+  }
+  main section .display {
+    height: auto;
+  }
+  main section .display .product {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    height: 25vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main section .display .product img {
+    width: 20%;
+  }
+  main section .display .product h3 {
+    font-size: 1em;
+  }
+  main section .display .product p {
+    font-size: 0.8em;
+  }
+  main section .display .product button {
+    font-size: 0.8em;
+  }
+}
 /*# sourceMappingURL=products.css.map */

@@ -27,6 +27,22 @@
                 </li>
             </ul>
         </nav>
+        <nav class="mobile-nav">
+            <span class="material-symbols-outlined" onclick="navClick()">menu</span>
+            <div class="hidden" id="mobile-nav-menu">
+                <span class="material-symbols-outlined" onclick="navClick()">close</span>
+                
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li>About Us</li>
+                    <li>Login</li>
+                    <li>
+                        <span class="material-symbols-outlined">shopping_cart</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      
     </header>
     <main>
         <section>
@@ -55,7 +71,7 @@
             </form>
             <div class="display">
                 <div class="product classics hidden">
-                    <img src="./Assets/Pizza-Banner.png">
+                    <img src="./Assets/Pizza-Simple.png">
                     <h3>Classic pizza</h3>
                     <p>Our ol' and reliable classic pizza, just mozzarella</p>
                     <button>Add to cart</button>
@@ -82,6 +98,14 @@
             </div>
         </section>
     </main>
+    <footer>
+        <p class="rights">&copy; πzza co 2022. all rights reserved</p>
+        <p class="nucba">Made by Francisco Zugarramurdi for <a href="https://nucba.io/"><img src="./Assets/Nucba.png"
+                    alt="Nucba"></a></p>
+        <a href="https://github.com/Francisco-Zugarramurdi/Pizza" class="github"><img src="./Assets/GitHub.png"
+                alt="Github source code"></a>
+    </footer>
+    <script src="./responsive.js"></script>
     <script src="products.js"></script>
 </body>
 

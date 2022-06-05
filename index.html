@@ -26,13 +26,27 @@
                 </li>
             </ul>
         </nav>
+        <nav class="mobile-nav">
+            <span class="material-symbols-outlined" onclick="navClick()">menu</span>
+            <div class="hidden" id="mobile-nav-menu">
+                <span class="material-symbols-outlined" onclick="navClick()">close</span>
+                
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li>About Us</li>
+                    <li>Login</li>
+                    <li>
+                        <span class="material-symbols-outlined">shopping_cart</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
         <section class="hero">
             <div class="slogan">
-                <h2>Business' Slogan</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente totam quia delectus. Iure,
-                    temporibus libero?</p>
+                <h2>Best <span>π</span>zza ever</h2>
+                <p>Mathematically proven</p>
             </div>
             <img src="./Assets/Pizza-Banner.png">
         </section>
@@ -42,20 +56,23 @@
             <div class="carrousel">
                 <div class="card">
                     <img src="./Assets/Pizza-Simple.png" alt="">
-                    <h3>Simple</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti.</p>
+                    <h3>Classic pizza</h3>
+                    <p>Our ol' and reliable classic pizza, just mozzarella</p>
+                    <p class="price">$20</p>
                     <button>Add to cart</button>
                 </div>
                 <div class="card">
                     <img src="./Assets/Pizza-Salad.png" alt="">
-                    <h3>Salad</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti.</p>
+                    <h3>Salad pizza</h3>
+                    <p>Our 100% cruelty free option even the cheese is vegan!</p>
+                    <p class="price">$25</p>
                     <button>Add to cart</button>
                 </div>
                 <div class="card">
                     <img src="./Assets/Pizza- Black olives.png" alt="">
                     <h3>Black Olives</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti.</p>
+                    <p>A flavorful olive pizza, only for the brave ones</p>
+                    <p class="price">$30</p>
                     <button>Add to cart</button>
                 </div>
             </div>
@@ -90,8 +107,13 @@
         </section>
     </main>
     <footer>
-
+        <p class="rights">&copy; πzza co 2022. all rights reserved</p>
+        <p class="nucba">Made by Francisco Zugarramurdi for <a href="https://nucba.io/"><img src="./Assets/Nucba.png"
+                    alt="Nucba"></a></p>
+        <a href="https://github.com/Francisco-Zugarramurdi/Pizza" class="github"><img src="./Assets/GitHub.png"
+                alt="Github source code"></a>
     </footer>
+    <script src="./responsive.js"></script>
 </body>
 
 </html>
