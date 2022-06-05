@@ -450,7 +450,7 @@ footer {
     }
 
     main .hero img {
-        height: 70vh;
+        height: 60vh;
     }
 
     main .favourites .carrousel {
@@ -498,7 +498,7 @@ footer {
 
 @media (max-width: 600px) {
 main .hero img{
-    height: 50vh;
+    height: 40vh;
 }
 main .favourites .carrousel .card{
     width: 40%;
@@ -508,7 +508,7 @@ main .favourites .carrousel .card{
 
 @media (max-width: 375px) {
 main .hero img{
-    height: 40vh;
+    height: 30vh;
     top: 80vh;
 }
 }

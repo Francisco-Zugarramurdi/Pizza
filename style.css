@@ -545,7 +545,7 @@ footer .github:hover {
             transform: scale(1.1);
   }
   main .hero img {
-    height: 70vh;
+    height: 60vh;
   }
   main .favourites .carrousel {
     -webkit-box-orient: vertical;
@@ -601,7 +601,7 @@ footer .github:hover {
 
 @media (max-width: 600px) {
   main .hero img {
-    height: 50vh;
+    height: 40vh;
   }
   main .favourites .carrousel .card {
     width: 40%;
@@ -611,7 +611,7 @@ footer .github:hover {
 
 @media (max-width: 375px) {
   main .hero img {
-    height: 40vh;
+    height: 30vh;
     top: 80vh;
   }
 }
