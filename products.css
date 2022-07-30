@@ -138,6 +138,19 @@ main section .display .product {
   color: #362100;
 }
 
+main section .display .product .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 main section .display .product img {
   margin-top: 5%;
   width: 80%;
@@ -146,6 +159,11 @@ main section .display .product img {
 main section .display .product h3 {
   font-size: 2em;
   margin: 3%;
+}
+
+main section .display .product .price {
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
 main section .display .product p {
@@ -193,18 +211,38 @@ main section .display .product button:active {
     width: 50%;
   }
   main section .display {
+    width: 100%;
     height: auto;
   }
   main section .display .product {
-    -webkit-box-orient: horizontal;
+    padding: 2%;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     height: 25vh;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section .display .product .data {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section .display .product .price {
+    font-size: 0.8em;
   }
   main section .display .product img {
     width: 20%;
@@ -216,6 +254,7 @@ main section .display .product button:active {
     font-size: 0.8em;
   }
   main section .display .product button {
+    margin-top: 0;
     font-size: 0.8em;
   }
 }

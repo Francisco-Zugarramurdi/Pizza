@@ -248,16 +248,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -271,6 +269,7 @@ body {
   position: absolute;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  z-index: 3;
 }
 
 .favourites .carrousel .card h3 {
@@ -299,10 +298,12 @@ body {
   -webkit-filter: drop-shadow(20%, --dark-orange);
           filter: drop-shadow(20%, --dark-orange);
   color: white;
+  z-index: 2;
 }
 
-.favourites .carrousel img:hover {
+.favourites .carrousel img:hover, .favourites .carrousel button:hover ~ img {
   opacity: 0;
+  z-index: 1;
   -webkit-transform: scale(1.2) rotate(30deg);
           transform: scale(1.2) rotate(30deg);
 }

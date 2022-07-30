@@ -190,12 +190,10 @@ body {
             border-radius: 50%;
             margin: 5%;
             display: flex;
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: center;
             position: relative;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
             text-align: center;
             filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.283));
@@ -204,6 +202,7 @@ body {
                 width: 120%;
                 position: absolute;
                 transition: 0.2s;
+                z-index: 3;
 
             }
 
@@ -232,11 +231,13 @@ body {
                 background-color: var(--orange);
                 filter: drop-shadow(20%, --dark-orange);
                 color: white;
+                z-index: 2;
             }
         }
 
-        img:hover {
+        img:hover,button:hover ~ img {
             opacity: 0;
+            z-index: 1;
             transform: scale(1.2) rotate(30deg);
 
         }

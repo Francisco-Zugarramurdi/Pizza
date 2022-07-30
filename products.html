@@ -31,7 +31,7 @@
             <span class="material-symbols-outlined" onclick="navClick()">menu</span>
             <div class="hidden" id="mobile-nav-menu">
                 <span class="material-symbols-outlined" onclick="navClick()">close</span>
-                
+
                 <ul>
                     <li><a href="products.html">Products</a></li>
                     <li>About Us</li>
@@ -42,7 +42,7 @@
                 </ul>
             </div>
         </nav>
-      
+
     </header>
     <main>
         <section>
@@ -71,28 +71,40 @@
             </form>
             <div class="display">
                 <div class="product classics hidden">
-                    <img src="./Assets/Pizza-Simple.png">
-                    <h3>Classic pizza</h3>
-                    <p>Our ol' and reliable classic pizza, just mozzarella</p>
-                    <button>Add to cart</button>
+                    <div class="data">
+                        <img src="./Assets/Pizza-Simple.png">
+                        <h3>Classic pizza</h3>
+                        <p class="price">$20</p>
+                        <p>Our ol' and reliable classic pizza, just mozzarella</p>
+                    </div>
+                    <button onclick="addProduct('Classic-pizza','20')">Add to cart</button>
                 </div>
                 <div class="product drinks hidden">
-                    <img src="./Assets/big-coke.png">
-                    <h3>Coke</h3>
-                    <p>A fresh and fizzy drink</p>
-                    <button>Add to cart</button>
+                    <div class="data">
+                        <img src="./Assets/big-coke.png">
+                        <h3>Coke</h3>
+                        <p class="price">$8</p>
+                        <p>A fresh and fizzy drink</p>
+                    </div>
+                    <button onclick="addProduct('Coke','8')">Add to cart</button>
                 </div>
                 <div class="product combos hidden">
-                    <img src="./Assets/Pizza-Combo.png">
-                    <h3>Pizza an' coke</h3>
-                    <p>Our ol' and reliable classic pizza but not just mozzarella also brings with her a coke</p>
-                    <button>Add to cart</button>
+                    <div class="data">
+                        <img src="./Assets/Pizza-Combo.png">
+                        <h3>Pizza an' coke</h3>
+                        <p class="price">$25</p>
+                        <p>Our ol' and reliable classic pizza but not just mozzarella also brings with her a coke</p>
+                    </div>
+                    <button onclick="addProduct('Pizza-Combo','25')">Add to cart</button>
                 </div>
                 <div class="product vegan hidden">
-                    <img src="./Assets/Pizza-Salad.png">
-                    <h3>Salad pizza</h3>
-                    <p>Our 100% cruelty free option even the cheese is vegan!</p>
-                    <button>Add to cart</button>
+                    <div class="data">
+                        <img src="./Assets/Pizza-Salad.png">
+                        <h3>Salad pizza</h3>
+                        <p class="price">$25</p>
+                        <p>Our 100% cruelty free option even the cheese is vegan!</p>
+                    </div>
+                    <button onclick="addProduct('Salad-pizza','25')">Add to cart</button>
                 </div>
 
             </div>
@@ -106,7 +118,8 @@
                 alt="Github source code"></a>
     </footer>
     <script src="./responsive.js"></script>
-    <script src="products.js"></script>
+    <script src="./products.js"></script>
+    <script src="./cart.js"></script>
 </body>
 
 </html>
